@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Thakur — Computer Engineering Student | Portfolio</title>
+    <meta name="description" content="Portfolio of Aditya Thakur — Computer Engineering student at Sardar Patel Institute of Technology (SPIT), Mumbai. Projects, skills, and more.">
+    <meta name="keywords" content="Aditya Thakur, SPIT, Computer Engineering, Portfolio, Developer, Mumbai">
+    <meta name="author" content="Aditya Thakur">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Aditya Thakur — Portfolio">
+    <meta property="og:description" content="Computer Engineering student at SPIT, Mumbai. Explore my projects, skills, and education.">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon (simple emoji-based SVG) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Background Orbs -->
+    <div class="bg-orbs" aria-hidden="true">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <!-- ====== NAVIGATION ====== -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#" class="nav-logo">AT.</a>
+            <div class="nav-links" id="nav-links">
+                <a href="#about">About</a>
+                <a href="#education">Education</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#coursework">Courses</a>
+                <a href="#contact">Contact</a>
+                <a href="https://github.com/adityathakur149" target="_blank" rel="noopener" class="nav-resume-btn">
+                    <i class="fa-solid fa-file-arrow-down"></i> Resume
+                </a>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ====== HERO ====== -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <p class="hero-greeting reveal">Hi, my name is</p>
+                <h1 class="hero-name reveal reveal-delay-1">
+                    Aditya <span class="highlight">Thakur.</span>
+                </h1>
+                <p class="hero-tagline reveal reveal-delay-2">
+                    I'm a <span class="typed-text" id="typed-text"></span><span class="cursor" id="cursor">|</span>
+                </p>
+                <p class="hero-description reveal reveal-delay-3">
+                    Second-year Computer Engineering student at 
+                    <strong>Sardar Patel Institute of Technology (SPIT)</strong>, Mumbai.
+                    Passionate about building impactful software and exploring the intersection of 
+                    systems programming, web development, and artificial intelligence.
+                </p>
+                <div class="hero-buttons reveal reveal-delay-3">
+                    <a href="#projects" class="btn-primary">
+                        <i class="fa-solid fa-rocket"></i> View Projects
+                    </a>
+                    <a href="#contact" class="btn-secondary">
+                        <i class="fa-regular fa-envelope"></i> Get In Touch
+                    </a>
+                </div>
+                <div class="hero-socials reveal reveal-delay-4">
+                    <a href="https://github.com/adityathakur149" target="_blank" rel="noopener" aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/adityathakur147" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:aditya.thakur25@spit.ac.in" aria-label="Email">
+                        <i class="fa-regular fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator" aria-hidden="true">
+            <div class="mouse"></div>
+            <span>SCROLL</span>
+        </div>
+    </section>
+
+    <!-- ====== ABOUT ====== -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-avatar-wrapper reveal">
+                    <div class="about-avatar">
+                        <span class="initials">AT</span>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <span class="section-label reveal">About Me</span>
+                    <h2 class="section-title reveal">A quick introduction.</h2>
+                    <p class="reveal">
+                        I'm <strong>Aditya Thakur</strong>, a second-year <strong>Computer Engineering</strong> 
+                        student at <strong>SPIT, Mumbai</strong>. I enjoy solving complex problems and 
+                        building software that makes a real difference.
+                    </p>
+                    <p class="reveal">
+                        My coursework spans <strong>Data Structures</strong>, <strong>Database Management Systems</strong>, 
+                        <strong>Computer Organization</strong>, and <strong>Object-Oriented Programming</strong>. 
+                        I'm always learning new technologies and looking for opportunities to apply my skills 
+                        in meaningful projects.
+                    </p>
+                    <div class="about-stats reveal">
+                        <div class="stat-card">
+                            <span class="stat-number">7.5</span>
+                            <span class="stat-label">CGPA</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">93.6%</span>
+                            <span class="stat-label">Class X</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">2029</span>
+                            <span class="stat-label">Grad Year</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== EDUCATION ====== -->
+    <section class="education" id="education">
+        <div class="container">
+            <span class="section-label reveal">Education</span>
+            <h2 class="section-title reveal">Where I've studied.</h2>
+            <div class="timeline">
+                <!-- SPIT -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-date">Sep 2025 — May 2029 (Expected)</span>
+                        <h3 class="timeline-title">Sardar Patel Institute of Technology (SPIT)</h3>
+                        <p class="timeline-subtitle">B.Tech in Computer Engineering — Mumbai, Maharashtra</p>
+                        <span class="timeline-score">
+                            <i class="fa-solid fa-graduation-cap"></i> CGPA: 7.5 / 10
+                        </span>
+                    </div>
+                </div>
+                <!-- Narayana -->
+                <div class="timeline-item reveal reveal-delay-1">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-date">Jul 2023 — May 2025</span>
+                        <h3 class="timeline-title">Narayana Junior College</h3>
+                        <p class="timeline-subtitle">Higher Secondary Certificate (HSC) — Thane, Maharashtra</p>
+                        <span class="timeline-score">
+                            <i class="fa-solid fa-percent"></i> 72.50%
+                        </span>
+                    </div>
+                </div>
+                <!-- St. Xavier's -->
+                <div class="timeline-item reveal reveal-delay-2">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-date">Jun 2010 — May 2023</span>
+                        <h3 class="timeline-title">St. Xavier's Global Academy</h3>
+                        <p class="timeline-subtitle">CBSE (Class X) — Thane, Maharashtra</p>
+                        <span class="timeline-score">
+                            <i class="fa-solid fa-award"></i> 93.60%
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== PROJECTS ====== -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <span class="section-label reveal">Projects</span>
+            <h2 class="section-title reveal">What I've built.</h2>
+            <div class="projects-grid">
+                <!-- SkyFlow -->
+                <div class="project-card reveal">
+                    <div class="project-header">
+                        <div class="project-icon">🌤️</div>
+                        <div class="project-links">
+                            <a href="https://github.com/adityathakur149/SkyFlow" target="_blank" rel="noopener" aria-label="GitHub repository">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">SkyFlow</h3>
+                    <p class="project-description">
+                        A web application featuring a responsive and visually appealing user interface. 
+                        Built with modern CSS styling, interactive elements, and a clean front-end layout 
+                        designed for an intuitive user experience.
+                    </p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+
+                <!-- Placeholder: More projects coming -->
+                <div class="project-card reveal reveal-delay-1" style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 280px; text-align: center;">
+                    <div class="project-icon" style="margin-bottom: 16px;">🚀</div>
+                    <h3 class="project-title">More Coming Soon</h3>
+                    <p class="project-description">
+                        Currently working on new projects involving systems programming, 
+                        full-stack development, and AI. Stay tuned!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== SKILLS ====== -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <span class="section-label reveal">Skills</span>
+            <h2 class="section-title reveal">Technologies I work with.</h2>
+            <div class="skills-grid">
+                <!-- Languages -->
+                <div class="skill-category reveal">
+                    <div class="skill-category-icon">💻</div>
+                    <h3>Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">SQL</span>
+                    </div>
+                </div>
+                <!-- Tools -->
+                <div class="skill-category reveal reveal-delay-1">
+                    <div class="skill-category-icon">🛠️</div>
+                    <h3>Developer Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">Overleaf</span>
+                        <span class="skill-tag">MySQL</span>
+                    </div>
+                </div>
+                <!-- Concepts -->
+                <div class="skill-category reveal reveal-delay-2">
+                    <div class="skill-category-icon">🧠</div>
+                    <h3>Concepts</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Data Structures</span>
+                        <span class="skill-tag">OOP</span>
+                        <span class="skill-tag">DBMS</span>
+                        <span class="skill-tag">Computer Architecture</span>
+                        <span class="skill-tag">Discrete Mathematics</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== COURSEWORK ====== -->
+    <section class="coursework" id="coursework">
+        <div class="container">
+            <span class="section-label reveal">Coursework</span>
+            <h2 class="section-title reveal">Courses I've completed.</h2>
+            <div class="course-grid">
+                <div class="course-item reveal">Data Structures</div>
+                <div class="course-item reveal reveal-delay-1">Database Management Systems</div>
+                <div class="course-item reveal">Computer Organization & Architecture</div>
+                <div class="course-item reveal reveal-delay-1">Discrete Structures & Graph Theory</div>
+                <div class="course-item reveal">Digital Systems</div>
+                <div class="course-item reveal reveal-delay-1">Linear Algebra</div>
+                <div class="course-item reveal">Data Science (Lab)</div>
+                <div class="course-item reveal reveal-delay-1">Object-Oriented Programming (Java)</div>
+                <div class="course-item reveal">Problem Solving (Imperative Programming)</div>
+                <div class="course-item reveal reveal-delay-1">Engineering Graphics</div>
+                <div class="course-item reveal">Mathematics I & II</div>
+                <div class="course-item reveal reveal-delay-1">Entrepreneurship & Innovation</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== CONTACT ====== -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <span class="section-label reveal">Contact</span>
+                <h2 class="section-title reveal">Let's connect.</h2>
+                <p class="contact-text reveal">
+                    I'm actively looking for internship opportunities — both in industry and research. 
+                    If you'd like to collaborate, have a project idea, or just want to chat, 
+                    feel free to reach out!
+                </p>
+                <div class="contact-cards reveal">
+                    <a href="mailto:aditya.thakur25@spit.ac.in" class="contact-card" id="contact-email">
+                        <div class="contact-card-icon"><i class="fa-regular fa-envelope"></i></div>
+                        <span class="contact-card-label">Email</span>
+                        <span class="contact-card-value">aditya.thakur25@spit.ac.in</span>
+                    </a>
+                    <a href="tel:+917393939050" class="contact-card" id="contact-phone">
+                        <div class="contact-card-icon"><i class="fa-solid fa-phone"></i></div>
+                        <span class="contact-card-label">Phone</span>
+                        <span class="contact-card-value">+91 73939 39050</span>
+                    </a>
+                    <a href="https://linkedin.com/in/adityathakur147" target="_blank" rel="noopener" class="contact-card" id="contact-linkedin">
+                        <div class="contact-card-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                        <span class="contact-card-label">LinkedIn</span>
+                        <span class="contact-card-value">adityathakur147</span>
+                    </a>
+                </div>
+                <div class="contact-socials reveal">
+                    <a href="https://github.com/adityathakur149" target="_blank" rel="noopener" aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/adityathakur147" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:aditya.thakur25@spit.ac.in" aria-label="Email">
+                        <i class="fa-regular fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== FOOTER ====== -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">
+                Designed & Built by <strong>Aditya Thakur</strong> · © 2026
+            </p>
+            <div class="footer-links">
+                <a href="https://github.com/adityathakur149" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://linkedin.com/in/adityathakur147" target="_blank" rel="noopener">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
