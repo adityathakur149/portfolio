@@ -4,61 +4,12 @@
    ============================================ */
 
 document.addEventListener('DOMContentLoaded', () => {
-  initTypingAnimation();
   initScrollReveal();
   initNavbar();
   initMobileMenu();
   initSmoothScroll();
   initActiveNavHighlight();
 });
-
-/* ---------- Typing Animation ---------- */
-function initTypingAnimation() {
-  const typedElement = document.getElementById('typed-text');
-  if (!typedElement) return;
-
-  const phrases = [
-    'Second-year Computer Engineering Student (SPIT, Mumbai).',
-    'Full-Stack Developer.',
-    'AI/ML & RAG Systems.',
-    'Real-Time Software.',
-    'Seeking Dec 2026 Internship.'
-  ];
-
-  let phraseIndex = 0;
-  let charIndex = 0;
-  let isDeleting = false;
-  let typingSpeed = 80;
-
-  function type() {
-    const currentPhrase = phrases[phraseIndex];
-
-    if (isDeleting) {
-      typedElement.textContent = currentPhrase.substring(0, charIndex - 1);
-      charIndex--;
-      typingSpeed = 40;
-    } else {
-      typedElement.textContent = currentPhrase.substring(0, charIndex + 1);
-      charIndex++;
-      typingSpeed = 80;
-    }
-
-    if (!isDeleting && charIndex === currentPhrase.length) {
-      // Pause at end of phrase
-      typingSpeed = 2000;
-      isDeleting = true;
-    } else if (isDeleting && charIndex === 0) {
-      isDeleting = false;
-      phraseIndex = (phraseIndex + 1) % phrases.length;
-      typingSpeed = 400;
-    }
-
-    setTimeout(type, typingSpeed);
-  }
-
-  // Start after a small delay
-  setTimeout(type, 600);
-}
 
 /* ---------- Scroll Reveal ---------- */
 function initScrollReveal() {
