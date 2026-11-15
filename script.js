@@ -18,11 +18,11 @@ function initTypingAnimation() {
   if (!typedElement) return;
 
   const phrases = [
-    'Computer Engineering Student.',
-    'Full-Stack Developer.',
-    'Real-Time App Builder.',
-    'AI & RAG Enthusiast.',
-    'I\'m Open to Internships (Dec 2026).'
+    'Computer Engineering Student (SPIT).',
+    'RAG & Information Retrieval.',
+    'Real-Time Collaborative Systems.',
+    'Applied ML & Full-Stack.',
+    'Seeking Dec 2026 Internship.'
   ];
 
   let phraseIndex = 0;

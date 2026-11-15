@@ -49,7 +49,7 @@
                 <a href="#skills">Skills</a>
                 <a href="#coursework">Courses</a>
                 <a href="#contact">Contact</a>
-                <a href="../resume_updated.tex" target="_blank" rel="noopener" class="nav-resume-btn">
+                <a href="resume.pdf" target="_blank" rel="noopener" class="nav-resume-btn">
                     <i class="fa-solid fa-file-arrow-down"></i> Resume
                 </a>
             </div>
@@ -73,10 +73,11 @@
                     I'm a <span class="typed-text" id="typed-text"></span><span class="cursor" id="cursor">|</span>
                 </p>
                 <p class="hero-description reveal reveal-delay-3">
-                    Computer Engineering student at
-                    <strong>Sardar Patel Institute of Technology (SPIT)</strong>, Mumbai.
-                    I build full-stack web apps, real-time systems, and AI-powered tools —
-                    and I'm actively looking for a <strong>1-month internship in December 2026</strong>.
+                    I'm a second-year Computer Engineering student at
+                    <strong>Sardar Patel Institute of Technology (SPIT)</strong>, Mumbai,
+                    interested in information retrieval, applied AI, and collaborative software.
+                    I've built a PDF question-answering assistant and a real-time code editor,
+                    and I'm seeking a <strong>four-week research or software internship during December 2026</strong>.
                 </p>
                 <div class="hero-buttons reveal reveal-delay-3">
                     <a href="#projects" class="btn-primary">
@@ -119,23 +120,23 @@
                         from real-time collaborative apps to AI-assisted tools.
                     </p>
                     <p class="reveal">
-                        My coursework includes <strong>Data Structures</strong>, <strong>Database Management Systems</strong>,
-                        <strong>Computer Organization</strong>, and <strong>Object-Oriented Programming</strong>.
-                        I'm currently focused on building portfolio-ready projects and preparing for a
-                        <strong>short-term internship in December 2026</strong>.
+                        My interests lie in <strong>information retrieval</strong>, <strong>RAG systems</strong>,
+                        <strong>real-time collaboration</strong>, and <strong>applied ML</strong>.
+                        I'm currently preparing for a <strong>four-week internship in December 2026</strong>
+                        (available full-time Dec 7–Jan 2, then part-time remote).
                     </p>
                     <div class="about-stats reveal">
                         <div class="stat-card">
-                            <span class="stat-number">7.37</span>
-                            <span class="stat-label">CGPA</span>
+                            <span class="stat-number">Dec 2026</span>
+                            <span class="stat-label">Available</span>
                         </div>
                         <div class="stat-card">
-                            <span class="stat-number">3+</span>
-                            <span class="stat-label">Projects</span>
+                            <span class="stat-number">4 Weeks</span>
+                            <span class="stat-label">Internship</span>
                         </div>
                         <div class="stat-card">
-                            <span class="stat-number">2029</span>
-                            <span class="stat-label">Grad Year</span>
+                            <span class="stat-number">Remote OK</span>
+                            <span class="stat-label">After Dec</span>
                         </div>
                     </div>
                 </div>
@@ -195,24 +196,72 @@
             <span class="section-label reveal">Projects</span>
             <h2 class="section-title reveal">What I've built.</h2>
             <div class="projects-grid">
-                <!-- DevCollab -->
+                <!-- StudyBuddy AI -->
                 <div class="project-card reveal">
+                    <div class="project-header">
+                        <div class="project-icon">🧠</div>
+                        <div class="project-links">
+                            <a href="https://github.com/adityathakur149/studybuddy-frontend" target="_blank" rel="noopener" aria-label="StudyBuddy Frontend" class="project-link-label">
+                                <i class="fa-brands fa-github"></i> Frontend
+                            </a>
+                            <a href="https://github.com/adityathakur149/studybuddy-backend" target="_blank" rel="noopener" aria-label="StudyBuddy Backend" class="project-link-label">
+                                <i class="fa-brands fa-github"></i> Backend
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">StudyBuddy AI</h3>
+                    <p class="project-description">
+                        A RAG-powered study assistant that ingests PDFs, performs semantic retrieval with ChromaDB and sentence-transformer embeddings, and answers questions with citations to retrieved source passages.
+                    </p>
+                    <div class="project-details">
+                        <h4>Problem</h4>
+                        <p>Students struggle to extract answers from dense PDFs efficiently.</p>
+                        <h4>Solution</h4>
+                        <p>FastAPI backend with document ingestion, chunking, embedding generation, and semantic retrieval via REST endpoints. Context-aware answer generation with source citations.</p>
+                        <h4>Architecture</h4>
+                        <p>PDF parsing → Text chunking → all-MiniLM-L6-v2 embeddings → ChromaDB vector store → Semantic search → LLM answer generation with citations.</p>
+                        <h4>Testing & Limitations</h4>
+                        <p>Evaluated on custom question sets; citation accuracy varies with chunk size. Math-heavy PDFs parse poorly with PyMuPDF.</p>
+                    </div>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>FastAPI</span>
+                        <span>ChromaDB</span>
+                        <span>Sentence-Transformers</span>
+                        <span>LangChain</span>
+                    </div>
+                </div>
+
+                <!-- DevCollab -->
+                <div class="project-card reveal reveal-delay-1">
                     <div class="project-header">
                         <div class="project-icon">⚡</div>
                         <div class="project-links">
-                            <a href="https://github.com/adityathakur149/devcollab-frontend" target="_blank" rel="noopener" aria-label="DevCollab Frontend GitHub repository">
-                                <i class="fa-brands fa-github"></i>
+                            <a href="https://devcollab-frontend-uwvi.vercel.app" target="_blank" rel="noopener" aria-label="DevCollab Live Demo" class="project-link-label live-demo">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
                             </a>
-                            <a href="https://devcollab-frontend-uwvi.vercel.app" target="_blank" rel="noopener" aria-label="DevCollab Live Demo" class="live-demo-link">
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            <a href="https://github.com/adityathakur149/devcollab-frontend" target="_blank" rel="noopener" aria-label="DevCollab Frontend" class="project-link-label">
+                                <i class="fa-brands fa-github"></i> Frontend
+                            </a>
+                            <a href="https://github.com/adityathakur149/devcollab-backend" target="_blank" rel="noopener" aria-label="DevCollab Backend" class="project-link-label">
+                                <i class="fa-brands fa-github"></i> Backend
                             </a>
                         </div>
                     </div>
                     <h3 class="project-title">DevCollab</h3>
                     <p class="project-description">
-                        A real-time collaborative code editor with room-based collaboration, multi-user synchronization,
-                        live chat, multi-cursor support, and secure sandboxed code execution for multiple languages.
+                        A room-based collaborative code editor with shared editing, participant presence, in-room chat, and sandboxed code execution across 10+ languages via Wandbox.
                     </p>
+                    <div class="project-details">
+                        <h4>Problem</h4>
+                        <p>Remote pair programming lacks real-time synchronization and integrated execution environments.</p>
+                        <h4>Solution</h4>
+                        <p>React + Monaco Editor frontend with Socket.io for real-time sync (operational transforms), presence, and chat. Node.js/Express backend with JWT auth and MongoDB persistence.</p>
+                        <h4>Architecture</h4>
+                        <p>WebSocket rooms → Monaco Editor bindings → Shared cursor/selection state → Wandbox API for execution → JWT-protected REST for projects/auth.</p>
+                        <h4>Security Note</h4>
+                        <p>Code execution security relies on Wandbox's sandbox isolation. JWT authentication handles application-level access control only.</p>
+                    </div>
                     <div class="project-tags">
                         <span>React</span>
                         <span>Node.js</span>
@@ -222,74 +271,31 @@
                     </div>
                 </div>
 
-                <!-- StudyBuddy AI -->
-                <div class="project-card reveal reveal-delay-1">
-                    <div class="project-header">
-                        <div class="project-icon">🧠</div>
-                        <div class="project-links">
-                            <a href="https://github.com/adityathakur149/studybuddy-frontend" target="_blank" rel="noopener" aria-label="StudyBuddy Frontend GitHub repository">
-                                <i class="fa-brands fa-github"></i>
-                            </a>
-                            <a href="https://github.com/adityathakur149/studybuddy-backend" target="_blank" rel="noopener" aria-label="StudyBuddy Backend GitHub repository" style="margin-left: 8px;">
-                                <i class="fa-brands fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <h3 class="project-title">StudyBuddy AI</h3>
-                    <p class="project-description">
-                        A RAG-powered study assistant that ingests PDFs, performs semantic retrieval with vector search,
-                        and answers questions with contextual citations to help students learn faster.
-                    </p>
-                    <div class="project-tags">
-                        <span>Python</span>
-                        <span>FastAPI</span>
-                        <span>LangChain</span>
-                        <span>ChromaDB</span>
-                        <span>HuggingFace</span>
-                    </div>
-                </div>
-
-                <!-- Portfolio -->
-                <div class="project-card reveal reveal-delay-2">
-                    <div class="project-header">
-                        <div class="project-icon">🎨</div>
-                        <div class="project-links">
-                            <a href="https://github.com/adityathakur149/portfolio" target="_blank" rel="noopener" aria-label="Portfolio GitHub repository">
-                                <i class="fa-brands fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <h3 class="project-title">Portfolio Website</h3>
-                    <p class="project-description">
-                        A responsive personal portfolio built with clean HTML, CSS, and JavaScript to showcase my projects,
-                        skills, education, and contact information.
-                    </p>
-                    <div class="project-tags">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                    </div>
-                </div>
-
                 <!-- SkyFlow -->
-                <div class="project-card reveal reveal-delay-3">
+                <div class="project-card reveal reveal-delay-2">
                     <div class="project-header">
                         <div class="project-icon">🌤️</div>
                         <div class="project-links">
-                            <a href="https://github.com/adityathakur149/SkyFlow" target="_blank" rel="noopener" aria-label="SkyFlow GitHub repository">
-                                <i class="fa-brands fa-github"></i>
+                            <a href="https://github.com/adityathakur149/SkyFlow" target="_blank" rel="noopener" aria-label="SkyFlow GitHub" class="project-link-label">
+                                <i class="fa-brands fa-github"></i> GitHub
                             </a>
                         </div>
                     </div>
                     <h3 class="project-title">SkyFlow</h3>
                     <p class="project-description">
-                        A responsive web application with a clean UI and interactive elements, focused on front-end
-                        fundamentals and user experience.
+                        A responsive weather application with location-based forecasts and condition-dependent dynamic backgrounds.
                     </p>
+                    <div class="project-details">
+                        <h4>Problem</h4>
+                        <p>Simple weather apps lack visual feedback for conditions.</p>
+                        <h4>Solution</h4>
+                        <p>Vanilla JS with OpenWeather API; dynamic backgrounds and icons change based on weather conditions and time of day.</p>
+                    </div>
                     <div class="project-tags">
                         <span>HTML</span>
                         <span>CSS</span>
                         <span>JavaScript</span>
+                        <span>OpenWeather API</span>
                     </div>
                 </div>
             </div>
@@ -350,7 +356,7 @@
     <section class="coursework" id="coursework">
         <div class="container">
             <span class="section-label reveal">Coursework</span>
-            <h2 class="section-title reveal">Courses I've completed.</h2>
+            <h2 class="section-title reveal">Relevant courses (Sem 3 in progress).</h2>
             <div class="course-grid">
                 <div class="course-item reveal">Data Structures</div>
                 <div class="course-item reveal reveal-delay-1">Database Management Systems</div>
@@ -365,6 +371,7 @@
                 <div class="course-item reveal">Mathematics I & II</div>
                 <div class="course-item reveal reveal-delay-1">Entrepreneurship & Innovation</div>
             </div>
+            <p class="course-note reveal"><small>*Semester 3 courses ongoing; exams in December 2026</small></p>
         </div>
     </section>
 
@@ -375,7 +382,7 @@
                 <span class="section-label reveal">Contact</span>
                 <h2 class="section-title reveal">Let's connect.</h2>
                 <p class="contact-text reveal">
-                    I'm actively looking for a <strong>1-month internship in December 2026</strong> (open to small companies/startups).
+                    I'm actively looking for a <strong>four-week internship in December 2026</strong> (available full-time Dec 7–Jan 2, then part-time remote; open to research labs and startups).
                     If you'd like to collaborate, discuss a project, or share an opportunity, feel free to reach out.
                 </p>
                 <div class="contact-cards reveal">

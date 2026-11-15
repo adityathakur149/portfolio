@@ -910,6 +910,80 @@ img {
   font-weight: 500;
 }
 
+/* Project Link Labels */
+.project-link-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.75rem;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 6px;
+  background: rgba(0, 255, 136, 0.08);
+  color: var(--accent-1);
+  border: 1px solid rgba(0, 255, 136, 0.12);
+  transition: all var(--transition-fast);
+  text-decoration: none;
+}
+
+.project-link-label:hover {
+  background: var(--accent-1);
+  color: #000;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(0, 255, 136, 0.3);
+}
+
+.project-link-label.live-demo {
+  background: var(--gradient-primary);
+  color: #000;
+  border-color: transparent;
+}
+
+.project-link-label.live-demo:hover {
+  box-shadow: 0 4px 20px rgba(0, 255, 136, 0.4);
+}
+
+/* Project Details */
+.project-details {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.project-details h4 {
+  font-size: 0.75rem;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  color: var(--accent-1);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 16px 0 6px 0;
+}
+
+.project-details h4:first-child {
+  margin-top: 0;
+}
+
+.project-details p {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Course Note */
+.course-note {
+  margin-top: 16px;
+  text-align: center;
+  color: var(--text-muted);
+}
+
+.course-note small {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+}
+
 /* ---------- Skills Section ---------- */
 .skills {
   padding: var(--section-padding);
