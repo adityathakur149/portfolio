@@ -19,9 +19,9 @@ function initTypingAnimation() {
 
   const phrases = [
     'Computer Engineering Student (SPIT).',
-    'RAG & Information Retrieval.',
-    'Real-Time Collaborative Systems.',
-    'Applied ML & Full-Stack.',
+    'Full-Stack Developer.',
+    'AI/ML & RAG Systems.',
+    'Real-Time Software.',
     'Seeking Dec 2026 Internship.'
   ];
 
