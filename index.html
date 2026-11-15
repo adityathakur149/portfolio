@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aditya Thakur — Computer Engineering Student | Portfolio</title>
-    <meta name="description" content="Portfolio of Aditya Thakur — Computer Engineering student at Sardar Patel Institute of Technology (SPIT), Mumbai. Projects, skills, and more.">
-    <meta name="keywords" content="Aditya Thakur, SPIT, Computer Engineering, Portfolio, Developer, Mumbai">
+    <meta name="description" content="Portfolio of Aditya Thakur — Computer Engineering student at Sardar Patel Institute of Technology (SPIT), Mumbai. Building full-stack, real-time, and AI-powered projects.">
+    <meta name="keywords" content="Aditya Thakur, SPIT, Computer Engineering, Portfolio, Developer, Mumbai, React, Node.js, FastAPI">
     <meta name="author" content="Aditya Thakur">
 
     <!-- Open Graph -->
     <meta property="og:title" content="Aditya Thakur — Portfolio">
-    <meta property="og:description" content="Computer Engineering student at SPIT, Mumbai. Explore my projects, skills, and education.">
+    <meta property="og:description" content="Computer Engineering student at SPIT, Mumbai. Explore my projects, skills, and experience.">
     <meta property="og:type" content="website">
 
-    <!-- Favicon (simple emoji-based SVG) -->
+    <!-- Favicon -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
 
     <!-- Font Awesome -->
@@ -42,7 +42,7 @@
                 <a href="#skills">Skills</a>
                 <a href="#coursework">Courses</a>
                 <a href="#contact">Contact</a>
-                <a href="https://github.com/adityathakur149" target="_blank" rel="noopener" class="nav-resume-btn">
+                <a href="../resume_updated.tex" target="_blank" rel="noopener" class="nav-resume-btn">
                     <i class="fa-solid fa-file-arrow-down"></i> Resume
                 </a>
             </div>
@@ -66,10 +66,10 @@
                     I'm a <span class="typed-text" id="typed-text"></span><span class="cursor" id="cursor">|</span>
                 </p>
                 <p class="hero-description reveal reveal-delay-3">
-                    Second-year Computer Engineering student at 
+                    Computer Engineering student at
                     <strong>Sardar Patel Institute of Technology (SPIT)</strong>, Mumbai.
-                    Passionate about building impactful software and exploring the intersection of 
-                    systems programming, web development, and artificial intelligence.
+                    I build full-stack web apps, real-time systems, and AI-powered tools —
+                    and I'm actively looking for a <strong>1-month internship in December 2026</strong>.
                 </p>
                 <div class="hero-buttons reveal reveal-delay-3">
                     <a href="#projects" class="btn-primary">
@@ -111,15 +111,15 @@
                     <span class="section-label reveal">About Me</span>
                     <h2 class="section-title reveal">A quick introduction.</h2>
                     <p class="reveal">
-                        I'm <strong>Aditya Thakur</strong>, a second-year <strong>Computer Engineering</strong> 
-                        student at <strong>SPIT, Mumbai</strong>. I enjoy solving complex problems and 
-                        building software that makes a real difference.
+                        I'm <strong>Aditya Thakur</strong>, a <strong>Computer Engineering</strong>
+                        student at <strong>SPIT, Mumbai</strong>. I enjoy building practical software —
+                        from real-time collaborative apps to AI-assisted tools.
                     </p>
                     <p class="reveal">
-                        My coursework spans <strong>Data Structures</strong>, <strong>Database Management Systems</strong>, 
-                        <strong>Computer Organization</strong>, and <strong>Object-Oriented Programming</strong>. 
-                        I'm always learning new technologies and looking for opportunities to apply my skills 
-                        in meaningful projects.
+                        My coursework includes <strong>Data Structures</strong>, <strong>Database Management Systems</strong>,
+                        <strong>Computer Organization</strong>, and <strong>Object-Oriented Programming</strong>.
+                        I'm currently focused on building portfolio-ready projects and preparing for a
+                        <strong>short-term internship in December 2026</strong>.
                     </p>
                     <div class="about-stats reveal">
                         <div class="stat-card">
@@ -127,8 +127,8 @@
                             <span class="stat-label">CGPA</span>
                         </div>
                         <div class="stat-card">
-                            <span class="stat-number">93.6%</span>
-                            <span class="stat-label">Class X</span>
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label">Projects</span>
                         </div>
                         <div class="stat-card">
                             <span class="stat-number">2029</span>
@@ -192,21 +192,74 @@
             <span class="section-label reveal">Projects</span>
             <h2 class="section-title reveal">What I've built.</h2>
             <div class="projects-grid">
-                <!-- SkyFlow -->
+                <!-- DevCollab -->
                 <div class="project-card reveal">
                     <div class="project-header">
-                        <div class="project-icon">🌤️</div>
+                        <div class="project-icon">⚡</div>
                         <div class="project-links">
-                            <a href="https://github.com/adityathakur149/SkyFlow" target="_blank" rel="noopener" aria-label="GitHub repository">
+                            <a href="https://github.com/adityathakur149/devcollab-frontend" target="_blank" rel="noopener" aria-label="DevCollab Frontend GitHub repository">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://devcollab-frontend-uwvi.vercel.app" target="_blank" rel="noopener" aria-label="DevCollab Live Demo" class="live-demo-link">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">DevCollab</h3>
+                    <p class="project-description">
+                        A real-time collaborative code editor with room-based collaboration, multi-user synchronization,
+                        live chat, multi-cursor support, and secure sandboxed code execution for multiple languages.
+                    </p>
+                    <div class="project-tags">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>Socket.io</span>
+                        <span>MongoDB</span>
+                        <span>Monaco Editor</span>
+                    </div>
+                </div>
+
+                <!-- StudyBuddy AI -->
+                <div class="project-card reveal reveal-delay-1">
+                    <div class="project-header">
+                        <div class="project-icon">🧠</div>
+                        <div class="project-links">
+                            <a href="https://github.com/adityathakur149/studybuddy-frontend" target="_blank" rel="noopener" aria-label="StudyBuddy Frontend GitHub repository">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://github.com/adityathakur149/studybuddy-backend" target="_blank" rel="noopener" aria-label="StudyBuddy Backend GitHub repository" style="margin-left: 8px;">
                                 <i class="fa-brands fa-github"></i>
                             </a>
                         </div>
                     </div>
-                    <h3 class="project-title">SkyFlow</h3>
+                    <h3 class="project-title">StudyBuddy AI</h3>
                     <p class="project-description">
-                        A web application featuring a responsive and visually appealing user interface. 
-                        Built with modern CSS styling, interactive elements, and a clean front-end layout 
-                        designed for an intuitive user experience.
+                        A RAG-powered study assistant that ingests PDFs, performs semantic retrieval with vector search,
+                        and answers questions with contextual citations to help students learn faster.
+                    </p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>FastAPI</span>
+                        <span>LangChain</span>
+                        <span>ChromaDB</span>
+                        <span>HuggingFace</span>
+                    </div>
+                </div>
+
+                <!-- Portfolio -->
+                <div class="project-card reveal reveal-delay-2">
+                    <div class="project-header">
+                        <div class="project-icon">🎨</div>
+                        <div class="project-links">
+                            <a href="https://github.com/adityathakur149/portfolio" target="_blank" rel="noopener" aria-label="Portfolio GitHub repository">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Portfolio Website</h3>
+                    <p class="project-description">
+                        A responsive personal portfolio built with clean HTML, CSS, and JavaScript to showcase my projects,
+                        skills, education, and contact information.
                     </p>
                     <div class="project-tags">
                         <span>HTML</span>
@@ -215,14 +268,26 @@
                     </div>
                 </div>
 
-                <!-- Placeholder: More projects coming -->
-                <div class="project-card reveal reveal-delay-1" style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 280px; text-align: center;">
-                    <div class="project-icon" style="margin-bottom: 16px;">🚀</div>
-                    <h3 class="project-title">More Coming Soon</h3>
+                <!-- SkyFlow -->
+                <div class="project-card reveal reveal-delay-3">
+                    <div class="project-header">
+                        <div class="project-icon">🌤️</div>
+                        <div class="project-links">
+                            <a href="https://github.com/adityathakur149/SkyFlow" target="_blank" rel="noopener" aria-label="SkyFlow GitHub repository">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">SkyFlow</h3>
                     <p class="project-description">
-                        Currently working on new projects involving systems programming, 
-                        full-stack development, and AI. Stay tuned!
+                        A responsive web application with a clean UI and interactive elements, focused on front-end
+                        fundamentals and user experience.
                     </p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -241,34 +306,37 @@
                     <div class="skill-tags">
                         <span class="skill-tag">C</span>
                         <span class="skill-tag">Java</span>
-                        <span class="skill-tag">HTML</span>
-                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">Python</span>
                         <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">TypeScript</span>
                         <span class="skill-tag">SQL</span>
                     </div>
                 </div>
-                <!-- Tools -->
+                <!-- Web -->
                 <div class="skill-category reveal reveal-delay-1">
-                    <div class="skill-category-icon">🛠️</div>
-                    <h3>Developer Tools</h3>
+                    <div class="skill-category-icon">🌐</div>
+                    <h3>Web & Backend</h3>
                     <div class="skill-tags">
-                        <span class="skill-tag">VS Code</span>
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">GitHub</span>
-                        <span class="skill-tag">Overleaf</span>
-                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Express</span>
+                        <span class="skill-tag">FastAPI</span>
+                        <span class="skill-tag">Socket.io</span>
+                        <span class="skill-tag">REST APIs</span>
                     </div>
                 </div>
-                <!-- Concepts -->
+                <!-- Tools -->
                 <div class="skill-category reveal reveal-delay-2">
-                    <div class="skill-category-icon">🧠</div>
-                    <h3>Concepts</h3>
+                    <div class="skill-category-icon">🛠️</div>
+                    <h3>Tools & Platforms</h3>
                     <div class="skill-tags">
-                        <span class="skill-tag">Data Structures</span>
-                        <span class="skill-tag">OOP</span>
-                        <span class="skill-tag">DBMS</span>
-                        <span class="skill-tag">Computer Architecture</span>
-                        <span class="skill-tag">Discrete Mathematics</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Postman</span>
+                        <span class="skill-tag">Vite</span>
                     </div>
                 </div>
             </div>
@@ -304,9 +372,8 @@
                 <span class="section-label reveal">Contact</span>
                 <h2 class="section-title reveal">Let's connect.</h2>
                 <p class="contact-text reveal">
-                    I'm actively looking for internship opportunities — both in industry and research. 
-                    If you'd like to collaborate, have a project idea, or just want to chat, 
-                    feel free to reach out!
+                    I'm actively looking for a <strong>1-month internship in December 2026</strong> (open to small companies/startups).
+                    If you'd like to collaborate, discuss a project, or share an opportunity, feel free to reach out.
                 </p>
                 <div class="contact-cards reveal">
                     <a href="mailto:aditya.thakur25@spit.ac.in" class="contact-card" id="contact-email">

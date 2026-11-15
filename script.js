@@ -19,10 +19,10 @@ function initTypingAnimation() {
 
   const phrases = [
     'Computer Engineering Student.',
-    'Problem Solver.',
-    'Web Developer.',
-    'Tech Enthusiast.',
-    'Lifelong Learner.'
+    'Full-Stack Developer.',
+    'Real-Time App Builder.',
+    'AI & RAG Enthusiast.',
+    'Open to Internships (Dec 2026).'
   ];
 
   let phraseIndex = 0;
