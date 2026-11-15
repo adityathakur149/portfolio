@@ -22,7 +22,7 @@ function initTypingAnimation() {
     'Full-Stack Developer.',
     'Real-Time App Builder.',
     'AI & RAG Enthusiast.',
-    'Open to Internships (Dec 2026).'
+    'I\'m Open to Internships (Dec 2026).'
   ];
 
   let phraseIndex = 0;
