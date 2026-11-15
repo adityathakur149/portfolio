@@ -18,7 +18,7 @@ function initTypingAnimation() {
   if (!typedElement) return;
 
   const phrases = [
-    'Computer Engineering Student (SPIT).',
+    'Second-year Computer Engineering Student (SPIT, Mumbai).',
     'Full-Stack Developer.',
     'AI/ML & RAG Systems.',
     'Real-Time Software.',
