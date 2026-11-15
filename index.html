@@ -190,6 +190,41 @@
             <span class="section-label reveal">Projects</span>
             <h2 class="section-title reveal">What I've built.</h2>
             <div class="projects-grid">
+                <!-- BIS Compliance Copilot -->
+                <div class="project-card reveal">
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fa-solid fa-gavel"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/adityathakur149/bis-sarathi" target="_blank" rel="noopener" aria-label="BIS Compliance Copilot Repository" class="project-link-label">
+                                <i class="fa-brands fa-github"></i> Repository
+                            </a>
+                            <a href="#" target="_blank" rel="noopener" aria-label="BIS Compliance Copilot Live Demo" class="project-link-label live-demo">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">BIS Compliance Copilot</h3>
+                    <p class="project-description">
+                        An auditable AI compliance assistant for Indian Standards (BIS) with split-screen UI: conversational Q&A copilot (left) and PDF viewer (right) that auto-navigates to cited clauses when references are clicked.
+                    </p>
+                    <div class="project-details">
+                        <h4>Problem</h4>
+                        <p>Compliance professionals need to quickly find and verify specific clauses in dense BIS standard documents.</p>
+                        <h4>Solution</h4>
+                        <p>React + FastAPI app with RAG pipeline: PyMuPDF parsing → text chunking → ChromaDB embeddings → Google Gemini 2.0 Flash for structured answers with page-level citations. Click citation badges to jump to exact PDF page.</p>
+                        <h4>Architecture</h4>
+                        <p>User → React Chat → FastAPI /api/chat → ChromaDB retrieve → Gemini generate → JSON with citations → PDF viewer auto-navigate to page.</p>
+                    </div>
+                    <div class="project-tags">
+                        <span>React</span>
+                        <span>FastAPI</span>
+                        <span>ChromaDB</span>
+                        <span>Google Gemini</span>
+                        <span>PyMuPDF</span>
+                        <span>Tailwind CSS</span>
+                    </div>
+                </div>
+
                 <!-- StudyBuddy AI -->
                 <div class="project-card reveal">
                     <div class="project-header">
