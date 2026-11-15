@@ -20,9 +20,7 @@ function initTypingAnimation() {
   const phrases = [
     'Full-Stack Developer.',
     'AI/ML Enthusiast.',
-    'RAG Systems Builder.',
-    'Real-Time Software Engineer.',
-    'Seeking Dec 2026 Internship.'
+    'RAG Systems Builder.'
   ];
 
   let phraseIndex = 0;
