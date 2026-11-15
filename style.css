@@ -1137,12 +1137,12 @@ img {
 }
 
 .course-list li::before {
-  content: '▸';
+  content: '◆';
   position: absolute;
   left: 0;
   color: var(--accent-1);
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 0.7rem;
 }
 
 .course-list li:hover {
@@ -1150,6 +1150,7 @@ img {
 }
 
 .course-list li.reveal-delay-1::before {
+  content: '◇';
   color: var(--accent-2);
 }
 
