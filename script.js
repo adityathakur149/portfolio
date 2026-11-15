@@ -4,12 +4,59 @@
    ============================================ */
 
 document.addEventListener('DOMContentLoaded', () => {
+  initTypingAnimation();
   initScrollReveal();
   initNavbar();
   initMobileMenu();
   initSmoothScroll();
   initActiveNavHighlight();
 });
+
+/* ---------- Typing Animation ---------- */
+function initTypingAnimation() {
+  const typedElement = document.getElementById('typed-text');
+  if (!typedElement) return;
+
+  const phrases = [
+    'Full-Stack Developer.',
+    'AI/ML Enthusiast.',
+    'RAG Systems Builder.',
+    'Real-Time Software Engineer.',
+    'Seeking Dec 2026 Internship.'
+  ];
+
+  let phraseIndex = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+  let typingSpeed = 80;
+
+  function type() {
+    const currentPhrase = phrases[phraseIndex];
+
+    if (isDeleting) {
+      typedElement.textContent = currentPhrase.substring(0, charIndex - 1);
+      charIndex--;
+      typingSpeed = 40;
+    } else {
+      typedElement.textContent = currentPhrase.substring(0, charIndex + 1);
+      charIndex++;
+      typingSpeed = 80;
+    }
+
+    if (!isDeleting && charIndex === currentPhrase.length) {
+      typingSpeed = 2000;
+      isDeleting = true;
+    } else if (isDeleting && charIndex === 0) {
+      isDeleting = false;
+      phraseIndex = (phraseIndex + 1) % phrases.length;
+      typingSpeed = 400;
+    }
+
+    setTimeout(type, typingSpeed);
+  }
+
+  setTimeout(type, 600);
+}
 
 /* ---------- Scroll Reveal ---------- */
 function initScrollReveal() {
