@@ -1,0 +1,159 @@
+﻿%-------------------------
+% Resume in Latex
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\Huge \scshape Aditya Thakur} \\ \vspace{1pt}
+    Mumbai, Maharashtra, India \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ +91 73939 39050 ~ \href{mailto:aditya.thakur25@spit.ac.in}{\raisebox{-0.2\height}\faEnvelope\  \underline{aditya.thakur25@spit.ac.in}} ~ 
+    \href{https://linkedin.com/in/adityathakur147}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/adityathakur147}}  ~
+    \href{https://github.com/adityathakur149}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/adityathakur149}}  ~
+    \href{https://adityathakur149.github.io/portfolio/}{\raisebox{-0.2\height}\faGlobe\ \underline{adityathakur149.github.io/portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Sardar Patel Institute of Technology (SPIT)}{Sep. 2025 -- May 2029 (Expected)}
+      {B.Tech Computer Engineering; CGPA: 7.37/10}{Mumbai, Maharashtra}
+    \resumeSubheading
+      {Narayana Junior College}{Jul. 2023 -- May 2025}
+      {HSC: 72.50\%}{Thane, Maharashtra}
+    \resumeSubheading
+      {St. Xavier's Global Academy}{Jun. 2010 -- May 2023}
+      {CBSE: 93.60\%}{Thane, Maharashtra}
+  \resumeSubHeadingListEnd
+  \vspace{6pt}
+
+\section{Relevant Coursework}
+    \begin{multicols}{3}
+        \begin{itemize}[itemsep=-3pt, parsep=2pt]
+            \item\small Data Structures
+            \item Database Management Systems
+            \item Computer Organization \& Architecture
+            \item Discrete Structures \& Graph Theory
+            \item Digital Systems
+            \item Linear Algebra
+            \item Data Science (Lab)
+            \item Object-Oriented Programming (Java)
+            \item Problem Solving (Imperative Programming)
+        \end{itemize}
+    \end{multicols}
+    \small \textit{*Courses in progress during Semester 3 (Dec 2026 exams ongoing)}
+  \vspace{6pt}
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{StudyBuddy AI} $|$ \emph{Python, FastAPI, ChromaDB, Sentence-Transformers, LangChain}}{Oct 2026}
+          \resumeItemListStart
+            \resumeItem{\href{https://github.com/adityathakur149/studybuddy-frontend}{\underline{Frontend}} ~ \href{https://github.com/adityathakur149/studybuddy-backend}{\underline{Backend}}}
+            \resumeItem{Built a PDF question-answering application with FastAPI, ChromaDB, and sentence-transformer embeddings; returns answers with citations to retrieved source passages.}
+            \resumeItem{Implemented document ingestion pipeline: PDF parsing, text chunking, embedding generation, and semantic retrieval via REST endpoints.}
+            \resumeItem{Designed RAG architecture with context-aware answer generation; evaluated retrieval quality on custom question sets.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{DevCollab} $|$ \emph{React, Node.js, Express, Socket.io, MongoDB, Monaco Editor, Wandbox API}}{Nov 2026}
+          \resumeItemListStart
+            \resumeItem{\href{https://devcollab-frontend-uwvi.vercel.app}{\underline{Live Demo}} ~ \href{https://github.com/adityathakur149/devcollab-frontend}{\underline{Frontend}} ~ \href{https://github.com/adityathakur149/devcollab-backend}{\underline{Backend}}}
+            \resumeItem{Built a room-based collaborative code editor using React, Monaco Editor, and Socket.io with shared editing, participant presence, and in-room chat.}
+            \resumeItem{Integrated Wandbox for sandboxed code execution across 10+ languages; implemented JWT-based authentication and MongoDB persistence.}
+            \resumeItem{Note: Code execution security relies on Wandbox's sandbox isolation; JWT auth handles application-level access control.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{SkyFlow} $|$ \emph{HTML, CSS, JavaScript, OpenWeather API}}{Jun 2026}
+          \resumeItemListStart
+            \resumeItem{\href{https://github.com/adityathakur149/SkyFlow}{\underline{GitHub}}}
+            \resumeItem{Built a responsive weather application with location-based forecasts and condition-dependent dynamic backgrounds.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{-10pt}
+  \vspace{8pt}
+
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small
+    \item \textbf{Languages}{: C, Java, Python, JavaScript, TypeScript, SQL} \\
+    \item \textbf{Web Technologies}{: React.js, Node.js, Express.js, HTML5, CSS3, Vite} \\
+    \item \textbf{Databases \& Tools}{: MongoDB, MySQL, Git, GitHub, VS Code, Postman} \\
+    \item \textbf{Other}{: Socket.io, REST APIs, LangChain, FastAPI, Linux}
+\end{itemize}
+  \vspace{-16pt}
+  \vspace{6pt}
+
+\end{document}
