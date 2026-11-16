@@ -929,9 +929,22 @@ img {
 
 .project-link-label:hover {
   background: var(--accent-1);
-  color: #000;
+  color: #000 !important;
   transform: translateY(-2px);
   box-shadow: 0 4px 20px rgba(0, 255, 136, 0.3);
+}
+
+.project-link-label.github {
+  background: rgba(36, 41, 46, 0.1);
+  color: #8b949e;
+  border: 1px solid rgba(139, 148, 158, 0.15);
+}
+
+.project-link-label.github:hover {
+  background: #24292e;
+  color: #fff !important;
+  border-color: #24292e;
+  box-shadow: 0 4px 20px rgba(36, 41, 46, 0.4);
 }
 
 .project-link-label.live-demo {
